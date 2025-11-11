@@ -6,7 +6,11 @@ import Warehouse from './pages/admin/Warehouse'
 import Zone from './pages/admin/Zone'
 import Location from './pages/admin/Location'
 import User from './pages/admin/User'
+import UserDetail from './pages/admin/UserDetail'
 import Customer from './pages/admin/Customer'
+import CustomerDetail from './pages/admin/CustomerDetail'
+import Product from './pages/admin/Product'
+import ProductDetail from './pages/admin/ProductDetail'
 import PurchaseOrder from './pages/inbound/PurchaseOrder'
 import GoodsReceived from './pages/inbound/GoodsReceived'
 import PutAway from './pages/inbound/PutAway'
@@ -28,7 +32,11 @@ export default function Router() {
                     <Route path="zone" element={<Zone />} />
                     <Route path="location" element={<Location />} />
                     <Route path="user" element={<User />} />
-                    <Route path="customer" element={<Customer />} />
+                    <Route path="user/:id" element={<UserDetail />} />
+                    <Route path="customers" element={<Customer />} />
+                    <Route path="customers/:id" element={<CustomerDetail />} />
+                    <Route path="products" element={<Product />} />
+                    <Route path="products/:id" element={<ProductDetail />} />
                 </Route>
                 <Route path="inbound">
                     <Route path="purchase-order" element={<PurchaseOrder />} />

@@ -109,7 +109,11 @@ export const mainMenu: MenuType = [
             },
             {
                 title: 'Customer',
-                url: '/admin/customer',
+                url: '/admin/customers',
+            },
+            {
+                title: 'Product',
+                url: '/admin/products',
             },
         ]
     },
